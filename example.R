@@ -11,7 +11,7 @@ p
 # try to add the significance bar by hand
 
 # draw the bar
-p <- p + geom_path(data = data.frame(x = c(1.995, 1.995, 2.995, 2.995), y = c(28, 30, 30, 28)), aes(x = x, y = y), size = 1)
+p <- p + geom_path(data = data.frame(x = c(2, 2, 3, 3), y = c(28, 30, 30, 28)), aes(x = x, y = y), size = 1)
 p
 
 # add the *
