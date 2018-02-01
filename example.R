@@ -1,5 +1,7 @@
 # generate example of barplot
 
+library(ggplot2)
+
 data_tooth <- ToothGrowth
 means <- c(mean(data_tooth[data_tooth$dose == 0.5,]$len), mean(data_tooth[data_tooth$dose == 1,]$len), mean(data_tooth[data_tooth$dose == 2,]$len)) 
 df <- data.frame(dose=c("D0.5", "D1", "D2"),
