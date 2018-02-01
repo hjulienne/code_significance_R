@@ -9,7 +9,7 @@ significant_bar <- function(){
 # 1-1 get x coordinates
 # should be just the mean of the bar
 
-coords <- ggplot_build(p)$data[[1]]
+coords = ggplot_build(p)$data[[1]]
 xcoord_bar1 = mean(c(coords[1,]$xmin, coords[1,]$xmax))
 xcoord_bar2 = mean(c(coords[2,]$xmin, coords[2,]$xmax))
 xcoord_bar3 = mean(c(coords[3,]$xmin, coords[3,]$xmax))
@@ -23,7 +23,7 @@ ycoord_bar2 = coords[2,6]
 ycoord_bar3 = coords[3,6]
 
 # I guess "above" cannot be a fixed value, but needs to be a proportion depending on the size of the y breaks of the graph
-y_range <- ggplot_build(p)$panel$ranges[[1]]$y.range
-y_sum <- sum(abs(y_range))
+y_range = ggplot_build(p)$panel$ranges[[1]]$y.range
+y_sum = sum(abs(y_range))
 
 # (2)
