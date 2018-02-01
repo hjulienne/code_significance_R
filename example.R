@@ -41,7 +41,6 @@ ycoord_bar2 = coords[2,6]
 ycoord_bar3 = coords[3,6]
 
 # I guess "above" cannot be a fixed value, but needs to be a proportion depending on the size of the y breaks of the graph
-# y_range = ggplot_build(p)$panel$ranges[[1]]$y.range or ggplot_build(p)$layout$panel_ranges[[1]]$y.range
 
 y_range = ggplot_build(p)$layout$panel_ranges[[1]]$y.range
 y_sum = sum(abs(y_range))
